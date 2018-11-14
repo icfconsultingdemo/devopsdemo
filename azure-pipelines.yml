@@ -1,51 +1,51 @@
 ---
 
-  Virtual Network-Name:
+  Virtual Network Name:
     type: string
     defaultValue: US-East-VNet
     metadata:
       description: This is the name of Dev Virtual Network
-  Virtual Network-Prefix:
+  Virtual Network Prefix:
     type: string
     defaultValue: 10.194.0.0/16
     metadata:
       description: The CIDR address space for Dev Virtual Network in Azure
-  Virtual Network-Subnet-DMZ-Prefix:
+  Virtual Network Subnet-DMZ-Prefix:
     type: string
     defaultValue: 10.194.8.0/24
     metadata:
       description: This is CIDR prefix for the Dev Perimeter Subnet (DMZ)
-  Virtual Network-Subnet-DMZ-Name:
+  Virtual Network Subnet-DMZ-Name:
     type: string
     defaultValue: SUBNET-DMZ
     metadata:
       description: This is the name of Dev Perimeter subnet (DMZ)
-  Virtual Network-Subnet-APP-Prefix:
+  Virtual Network Subnet-APP-Prefix:
     type: string
     defaultValue: 10.194.9.0/24
     metadata:
       description: This is CIDR prefix for Dev second Subnet (APP)
-  Virtual Network-Subnet-APP-Name:
+  Virtual Network Subnet-APP-Name:
     type: string
     defaultValue: SUBNET-APP
     metadata:
       description: This is the name of Dev second subnet (APP)
-  Virtual Network-Subnet-DATA-Prefix:
+  Virtual Network Subnet-DATA-Prefix:
     type: string
     defaultValue: 10.194.10.0/24
     metadata:
       description: This is CIDR prefix for the Dev Data Subnet
-  Virtual Network-Subnet-DATA-Name:
+  Virtual Network Subnet-DATA-Name:
     type: string
     defaultValue: SUBNET-DATA
     metadata:
       description: This is the name of Dev management subnet (DATA)
-  Virtual Network-Subnet-AEM-Prefix:
+  Virtual Network Subnet AEM Prefix:
     type: string
     defaultValue: 10.194.11.0/24
     metadata:
       description: This is CIDR prefix for the Dev AEM Subnet
-  Virtual Network-Subnet-AEM-Name:
+  Virtual Network Subnet AEM Name:
     type: string
     defaultValue: SUBNET-AEM
     metadata:
