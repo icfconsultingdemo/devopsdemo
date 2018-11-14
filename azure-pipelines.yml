@@ -1,21 +1,17 @@
 ---
 
-    type: string
-    defaultValue: US-East-VNet
-    metadata:
-      description: This is the name of Dev Virtual Network
-    type: string
-    defaultValue: 10.194.0.0/16
-    metadata:
-      description: The CIDR address space for Dev Virtual Network in Azure
-    type: string
-    defaultValue: 10.194.8.0/24
-    metadata:
-      description: This is CIDR prefix for the Dev Perimeter Subnet (DMZ)
-    type: string
-    defaultValue: SUBNET-DMZ
-    metadata:
-      description: This is the name of Dev Perimeter subnet (DMZ)
+    string
+    US-East-VNet
+    description: This is the name of Dev Virtual Network
+    string
+    10.194.0.0/16
+    description: The CIDR address space for Dev Virtual Network in Azure
+    string
+    10.194.8.0/24
+    description: This is CIDR prefix for the Dev Perimeter Subnet (DMZ)
+    string
+    SUBNET-DMZ
+    description: This is the name of Dev Perimeter subnet (DMZ)
     type: string
     defaultValue: 10.194.9.0/24
     metadata:
