@@ -1,9 +1,7 @@
 ---
 
-    string
     US-East-VNet
     description: This is the name of Dev Virtual Network
-    string
     10.194.0.0/16
     description: The CIDR address space for Dev Virtual Network in Azure
     string
