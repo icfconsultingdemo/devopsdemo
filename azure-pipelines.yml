@@ -1,7 +1,5 @@
 ---
-"$schema": https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#
-contentVersion: 1.0.0.0
-parameters:
+
   Virtual Network-Name:
     type: string
     defaultValue: US-East-VNet
@@ -98,7 +96,7 @@ variables:
   SubnetAEMRef: "[concat(variables('Virtual NetworkID'),'/subnets/', parameters('Virtual
     Network-Subnet-AEM-Name'))]"
 resources:
-- name: "[parameters('Virtual Network-NSG-DMZ-Name')]"
+	name: "[parameters('Virtual Network-NSG-DMZ-Name')]"
   type: Microsoft.Network/networkSecurityGroups
   location: "[resourceGroup().location]"
   apiVersion: '2018-08-01'
@@ -393,7 +391,7 @@ resources:
         access: Deny
         priority: 250
         direction: Outbound
-- name: "[parameters('Virtual Network-NSG-APP-Name')]"
+  name: "[parameters('Virtual Network-NSG-APP-Name')]"
   type: Microsoft.Network/networkSecurityGroups
   location: "[resourceGroup().location]"
   apiVersion: '2018-08-01'
@@ -688,7 +686,7 @@ resources:
         access: Deny
         priority: 250
         direction: Outbound
-- name: "[parameters('Virtual Network-NSG-DATA-Name')]"
+  name: "[parameters('Virtual Network-NSG-DATA-Name')]"
   type: Microsoft.Network/networkSecurityGroups
   location: "[resourceGroup().location]"
   apiVersion: '2018-08-01'
@@ -983,7 +981,7 @@ resources:
         access: Deny
         priority: 250
         direction: Outbound
-- name: "[parameters('Virtual Network-NSG-AEM-Name')]"
+  name: "[parameters('Virtual Network-NSG-AEM-Name')]"
   type: Microsoft.Network/networkSecurityGroups
   location: "[resourceGroup().location]"
   apiVersion: '2018-08-01'
@@ -1278,13 +1276,13 @@ resources:
         access: Deny
         priority: 250
         direction: Outbound
-- name: "[parameters('Route Table name')]"
+  name: "[parameters('Route Table name')]"
   type: Microsoft.Network/routeTables
   location: "[resourceGroup().location]"
   apiVersion: '2018-08-01'
   dependsOn:
   - "[parameters('Route Name')]"
-- name: "[parameters('Virtual Network-Name')]"
+  name: "[parameters('Virtual Network-Name')]"
   type: Microsoft.Network/virtualNetworks
   location: "[resourceGroup().location]"
   apiVersion: '2018-08-01'
@@ -1328,4 +1326,3 @@ resources:
         networkSecurityGroup:
           id: "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('Virtual
             Network-NSG-AEM-Name'))]"
-outputs: {}
